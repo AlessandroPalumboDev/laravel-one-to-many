@@ -5,6 +5,7 @@ namespace Database\Seeders;
 use Illuminate\Database\Console\Seeds\WithoutModelEvents;
 use Illuminate\Database\Seeder;
 use App\Models\Type;
+use Illuminate\Support\Facades\Schema;
 
 class TypeSeeder extends Seeder
 {
@@ -15,13 +16,16 @@ class TypeSeeder extends Seeder
     {
 
 
+        // Disabilito vincolo
+        Schema::disableForeignKeyConstraints();
 
-
+        // Svuoto la tabella
         Type::truncate();
 
 
         $types = ['Frontend', 'Backend', 'AI', 'Data Analytics', 'Fullstack'];
 
+        //Riempio e salvo la tabella
         foreach($types as $type){
 
             $new_type = new Type();
@@ -30,5 +34,8 @@ class TypeSeeder extends Seeder
 
             $new_type->save();
         }
+
+        // Riabilito vincolo
+        Schema::enableForeignKeyConstraints();
     }
 }

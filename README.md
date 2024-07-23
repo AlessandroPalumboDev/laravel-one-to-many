@@ -14,8 +14,8 @@ nelle lezioni dei giorni scorsi:
 ### Milestones:
 
 -   [&check;] Creare la migration per la tabella types
--   [&cross;] Creare il model Type
--   [&cross;] Creare la migration di modifica per la tabella projects per aggiungere la chiave esterna
+-   [&check;] Creare il model Type
+-   [&check;] Creare la migration di modifica per la tabella projects per aggiungere la chiave esterna
 -   [&cross;] Aggiungere ai model Type e Project i metodi per definire la relazione one to many
 -   [&cross;] Visualizzare nella pagina di dettaglio di un progetto la tipologia associata, se presente
 -   [&cross;] Permettere all’utente di associare una tipologia nella pagina di creazione e modifica di un progetto
