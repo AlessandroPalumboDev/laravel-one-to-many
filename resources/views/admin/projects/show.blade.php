@@ -11,8 +11,15 @@
                 </h2>
 
                 <div class="card-body">
+                    <h5>
+                        Tipo: {{$project->type?->title ?: 'Non definito'}}
+                    </h5>
+                    <hr>
+                    <h5>
+                        Descrizione:
+                    </h5>
                     <p>
-                        {{$project->description}}
+                         {{$project->description}}
                     </p>
 
                     <div class="d-flex justify-content-between align-items-center mt-5">
