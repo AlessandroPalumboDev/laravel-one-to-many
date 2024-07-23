@@ -13,10 +13,10 @@ return new class extends Migration
     {
         Schema::table('projects', function (Blueprint $table) {
 
-            //Creo la colonna
+            // Creo la colonna
             $table->unsignedBigInteger('type_id')->nullable()->after('id');
 
-            //Dico a laravel che è un a chiave esterna
+            // Creo chiave esterna
             $table->foreign('type_id')
             ->references('id')
             ->on('types')
