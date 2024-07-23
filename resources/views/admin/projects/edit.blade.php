@@ -25,12 +25,22 @@
                         @method("PUT")
                         <div class="mb-3">
                             <label for="name" class="form-label">Nome Progetto</label>
-                            <input type="text" class="form-control" id="name" name="name" value="{{ old("name", $project->name) }}" required/>
+                            <input type="text" class="form-control bg-black text-light" id="name" name="name" value="{{ old("name", $project->name) }}" required/>
+                        </div>
+
+                        <div class="mb-3">
+                            <label for="title" class="form-label">Tipo Progetto</label>
+                            <select name="type_id" class="form-select bg-black text-light" aria-label="Default select example">
+                                <option disabled selected>Scegli tipo di Progetto</option>
+                                @foreach ($types as $type)
+                                    <option value="{{$type->id}}"@if (old('type_id', $project->type_id) == $type->id) selected @endif>{{$type->title}}</option>
+                                @endforeach
+                              </select>
                         </div>
     
                         <div class="mb-3">
                             <label for="description" class="form-label">Descrizione Progetto</label>
-                            <input type="text" class="form-control" id="description" name="description" value="{{ old("description", $project->description) }}" required/>
+                            <input type="text" class="form-control bg-black text-light" id="description" name="description" value="{{ old("description", $project->description) }}" required/>
                         </div>
     
     

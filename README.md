@@ -18,8 +18,8 @@ nelle lezioni dei giorni scorsi:
 -   [&check;] Creare la migration di modifica per la tabella projects per aggiungere la chiave esterna
 -   [&check;] Aggiungere ai model Type e Project i metodi per definire la relazione one to many
 -   [&check;] Visualizzare nella pagina di dettaglio di un progetto la tipologia associata, se presente
--   [&cross;] Permettere all’utente di associare una tipologia nella pagina di creazione e modifica di un progetto
--   [&cross;] Gestire il salvataggio dell’associazione progetto-tipologia con opportune regole di validazione
+-   [&check;] Permettere all’utente di associare una tipologia nella pagina di creazione e modifica di un progetto
+-   [&check;] Gestire il salvataggio dell’associazione progetto-tipologia con opportune regole di validazione
 
 ### Bonus 1:
 
