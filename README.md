@@ -13,7 +13,7 @@ nelle lezioni dei giorni scorsi:
 
 ### Milestones:
 
--   Creare la migration per la tabella types
+-   Creare la migration per la tabella types &check;
 -   Creare il model Type
 -   Creare la migration di modifica per la tabella projects per aggiungere la chiave esterna
 -   Aggiungere ai model Type e Project i metodi per definire la relazione one to many
