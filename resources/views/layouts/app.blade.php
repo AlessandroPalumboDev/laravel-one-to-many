@@ -54,17 +54,25 @@
                                 <a class="nav-link  text-light" href="{{ url('/') }}">{{ __('Home') }}</a>
                             </li>
         
-        
-                            <li class="nav-item">
-                                <a class="nav-link text-light" href="
-                                {{ route('projects')}}">{{ __('Projects') }}</a>
-                            </li>
+
+
+                            {{-- <li class="nav-item">
+                                <a class="nav-link text-light" href="@auth {{ route('admin.projects.index') }} @else
+                                {{ route('projects')}}">{{ __('Projects') }} @endauth</a>
+                            </li> --}}
         
         
                             @auth
                             <li class="nav-item">
-                                <a class="nav-link text-light" href="{{ route('admin.projects.index') }}">{{ __('Projects for Admin') }}</a>
+                                <a class="nav-link text-light" href="{{ route('admin.projects.index') }}">{{ __('Projects') }}</a>
                             </li>
+
+                            @else
+                            <li class="nav-item">
+                                <a class="nav-link text-light" href="
+                                {{ route('projects')}}">{{ __('Projects') }}</a>
+                            </li>
+
                             @endauth
                         </ul>
         

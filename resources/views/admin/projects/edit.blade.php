@@ -31,7 +31,7 @@
                         <div class="mb-3">
                             <label for="title" class="form-label">Tipo Progetto</label>
                             <select name="type_id" class="form-select bg-black text-light" aria-label="Default select example">
-                                <option disabled selected>Scegli tipo di Progetto</option>
+                                {{-- <option disabled selected>Scegli tipo di Progetto</option> --}}
                                 @foreach ($types as $type)
                                     <option value="{{$type->id}}"@if (old('type_id', $project->type_id) == $type->id) selected @endif>{{$type->title}}</option>
                                 @endforeach
