@@ -42,7 +42,7 @@ class ProjectController extends Controller
         $project->name = $data['name'];
         $project->description = $data['description'];
         $project->slug = Str::of($data['name'])->slug();
-        $project->type_id = $request->input('type_id');
+        $project->type_id = $data['type_id'];
 
 
         $project->save();
@@ -67,7 +67,7 @@ class ProjectController extends Controller
         $project = Project::findOrFail($id);
         $types = Type::all();
 
-        return view('admin.projects.edit', compact('project'), compact('types'));
+        return view('admin.projects.edit', compact('project', 'types'));
     }
 
     /**
