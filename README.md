@@ -1,8 +1,6 @@
 # Laravel Boolfolio - Project Typology
 
-## Prima parte
-
-### Descrizione:
+## Descrizione:
 
 ```txt
 Continuiamo a lavorare sul codice dei giorni scorsi, ma in una nuova repo e aggiungiamo una nuova entità Type.
@@ -11,7 +9,7 @@ I task da svolgere sono diversi, ma alcuni di essi sono un ripasso di ciò che a
 nelle lezioni dei giorni scorsi:
 ```
 
-### Milestones:
+## Milestones:
 
 -   [&check;] Creare la migration per la tabella types
 -   [&check;] Creare il model Type
@@ -21,10 +19,10 @@ nelle lezioni dei giorni scorsi:
 -   [&check;] Permettere all’utente di associare una tipologia nella pagina di creazione e modifica di un progetto
 -   [&check;] Gestire il salvataggio dell’associazione progetto-tipologia con opportune regole di validazione
 
-### Bonus 1:
+## Bonus 1:
 
 -   [&check;] Creare il seeder per il model Type.
 
-### Bonus 2:
+## Bonus 2:
 
 -   [&cross;] Aggiungere le operazioni CRUD per il model Type, in modo da gestire le tipologie di progetto direttamente dal pannello di amministrazione.
